@@ -2,9 +2,34 @@
 
 /* CSS para todos os dispositivos */
 
+:root{
+    --cor01: #8377d1a9; /* Tropical Indigo */
+    --cor02: #D95D39; /* Cinnabar*/
+    --cor03: #003559; /* Prussian Blue */
+}
+
 *{
     margin: 0px;
     padding: 0px;
+}
+
+header{
+    background-color: var(--cor01);
+    padding: 20px;
+    width: 100vw;
+    height: 200px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+header > input#iprocurar{
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+
+    flex: 0 0 auto;
 }
 
 body{
@@ -14,22 +39,6 @@ body{
     font-size: 1em;
     width: 100vw;
     height: 100vh;
-}
-
-header{
-    padding-bottom: 30px;
-}
-
-main{
-    display: block;
-    padding: 20px;
-    text-align: center;
-}
-
-main > article#img{
-    height: 600px;
-    background: url(/src/imagens/construcao.png) center no-repeat scroll ;
-    background-size: contain;
 }
 
 footer{
